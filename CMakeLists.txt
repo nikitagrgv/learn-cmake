@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
-project(epta)
+project(learncmake)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -11,5 +11,5 @@ list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 
 find_package(MyLib MODULE REQUIRED)
 
-add_executable(epta main.cpp)
-target_link_libraries(epta PUBLIC MyLib::MyLib)
+add_executable(app main.cpp)
+target_link_libraries(app PUBLIC MyLib::MyLib)
